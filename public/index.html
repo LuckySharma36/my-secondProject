@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Management System</h1>
+    <nav id="navbar">
+    <a href="#addstudent">Add Student</a>
+    <a href="#getallstudent">Get All Student</a>
+    <a href="#getspecificstudent">Get Specific Student</a>
+    <a href="#deleteall">Delete All data</a>
+    <a href="#deletespecificstudent">Delete Specific Student</a>
+    <a href="#changecomplete">Change Details</a>
+    <a href="#changespecific">Change Specific Student</a>
+    </nav>
+
+    <hr>
+
+    <section id="addstudent">
+        <input type="number" id="StudentID" placeholder="Give student id">
+        <input type="text" id="studentName" placeholder="Give Student Name">
+        <input type="text" id="studentCourse" placeholder="Give student Course">
+        <button type="button" id="addstubutton">Add Student</button>
+        <p id="Addpara"></p>
+    </section>
+
+    <section id="getallstudent">
+        <button id="databutton" type="button">get all</button>
+        <p id="detailsAll"></p>
+    </section>
+    <section id="getspecificstudent">
+        <input type="number" id="NewId" placeholder="Give Student ID">
+        <button id="submit2" type="button">get Student</button>
+        <p id="detailpara"></p>
+    </section>
+
+    <section id="deleteall">
+        <button id="deleteAll" type="button">delete All</button>
+        <p id="deleteDetails"></p>
+    </section>
+    <section id="deletespecificstudent">
+        <input type="number" id="deleteid" placeholder="Give Student ID">
+        <button id="deletespecific" type="button">Delete Student</button>
+        <p id="deletespecificdetail"></p>
+    </section>
+
+    <section id="changecomplete">
+        <input type="number" id="changeId" placeholder="Give student id">
+        <input type="text" id="ChangeName" placeholder="Give Student Name">
+        <input type="text" id="ChangeCourse" placeholder="Give student Course">
+        <button id="changeAll" type="button">Update Student</button>
+        <p id="changedata"></p>
+    </section>
+
+    <section id="changespecific">
+        <input type="number" id="changeId1" placeholder="Give student id">
+        <input type="text" id="ChangeName1" placeholder="Give Student Name">
+        <input type="text" id="ChangeCourse1" placeholder="Give student Course">
+        <button id="changepartial" type="button">Update details</button>
+        <p id="updatevalue"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
