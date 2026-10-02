@@ -35,7 +35,7 @@ app.get("/students/:id", (req,res) => {
 
 app.post("/students", (req,res) => {
     const newStudent = {
-        student_id: req.body.student_id,
+        student_id: Number(req.body.student_id),
         name: req.body.name,
         course: req.body.course
     };
